@@ -10,5 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "Hello world"
-        run: "echo hello"
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+      - run: npm install
+      #- run: npm test
