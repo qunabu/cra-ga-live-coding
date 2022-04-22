@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-const dodawanie = (x: number, y: number): number => "ssss";
+const dodawanie = (x: number, y: number): number => x + y;
 
 function App() {
   return (
