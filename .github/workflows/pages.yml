@@ -1,0 +1,14 @@
+name: "GENERUJ mi github pages !!!"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Hello world"
+        run: "echo hello"
