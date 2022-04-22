@@ -18,3 +18,14 @@ jobs:
           node-version: "14"
       - run: npm install
       - run: npm run test
+
+  typescript-types:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+      - run: npm install
+      - run: ./node_modules/.bin/tsc --noEmit
